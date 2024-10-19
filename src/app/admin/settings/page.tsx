@@ -32,11 +32,11 @@ const Siswa = () => {
               <CardContent className="space-y-2">
                 <div className="space-y-1">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" defaultValue="dwiajuni@gmail.com" />
+                  <Input id="email" defaultValue="maxvarstapen@f1academy.com" />
                 </div>
                 <div className="space-y-1">
                   <Label htmlFor="email">NIP/Status</Label>
-                  <Input id="email" defaultValue="197206082005012005" />
+                  <Input id="email" defaultValue="Guru Tetap" />
                 </div>
                 <div className="space-y-1">
                   <Label htmlFor="confirmPassword">Confirm Password</Label>

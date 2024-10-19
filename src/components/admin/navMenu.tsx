@@ -40,27 +40,6 @@ const NavMenu: React.FC<NavMenuProps> = ({ closeSheet }) => {
         Laporan
       </Link>
 
-      <div>
-        <button className="flex items-center gap-3 rounded-lg px-3 my-1 py-2 text-muted-foreground transition-all hover:bg-accent w-full cursor-pointer" onClick={() => handleToggle("guruKelas")}>
-          <Users className="h-4 w-4" />
-          Guru Kelas
-          {activeCollapsible === "guruKelas" ? (
-            <ChevronUp className="ml-auto flex h-4 w-4 shrink-0 items-center justify-center rounded-full" />
-          ) : (
-            <ChevronDown className="ml-auto flex h-4 w-4 shrink-0 items-center justify-center rounded-full" />
-          )}
-        </button>
-        {activeCollapsible === "guruKelas" && (
-          <div className="pl-8">
-            <Link href="/admin/guruKelas" className="flex items-center rounded-lg p-2 text-muted-foreground transition-all hover:bg-accent w-full" onClick={closeSheet}>
-              List Guru Kelas
-            </Link>
-            <Link href="/admin/guruKelas/create" className="flex items-center rounded-lg p-2 text-muted-foreground transition-all hover:bg-accent w-full" onClick={closeSheet}>
-              Tambah Guru Kelas
-            </Link>
-          </div>
-        )}
-      </div>
       {/* ---------- Core ------------ */}
 
       {/* ---------- Siswa ------------ */}
@@ -88,51 +67,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ closeSheet }) => {
       </div>
       {/* ---------- Siswa ------------ */}
 
-      {/* ---------- Layanan ------------ */}
-      <p className="flex items-center gap-3 rounded-lg px-3 pt-4 text-muted-foreground transition-all hover:text-primary">Layanan</p>
-      <div>
-        <button className="flex items-center gap-3 rounded-lg px-3 my-1 py-2 text-muted-foreground transition-all hover:bg-accent w-full cursor-pointer" onClick={() => handleToggle("individual")}>
-          <NotebookPen className="h-4 w-4" />
-          Individual
-          {activeCollapsible === "individual" ? (
-            <ChevronUp className="ml-auto flex h-4 w-4 shrink-0 items-center justify-center rounded-full" />
-          ) : (
-            <ChevronDown className="ml-auto flex h-4 w-4 shrink-0 items-center justify-center rounded-full" />
-          )}
-        </button>
-        {activeCollapsible === "individual" && (
-          <div className="pl-8">
-            <Link href="/admin/layanan/individual" className="flex items-center rounded-lg p-2 text-muted-foreground transition-all hover:bg-accent w-full" onClick={closeSheet}>
-              List Data Individual
-            </Link>
-            <Link href="/admin/layanan/individual/create" className="flex items-center rounded-lg p-2 text-muted-foreground transition-all hover:bg-accent w-full" onClick={closeSheet}>
-              Tambah Individual
-            </Link>
-          </div>
-        )}
-      </div>
-      <div>
-        <button className="flex items-center gap-3 rounded-lg px-3 my-1 py-2 text-muted-foreground transition-all hover:bg-accent w-full cursor-pointer" onClick={() => handleToggle("kelompok")}>
-          <NotebookTabs className="h-4 w-4" />
-          Kelompok
-          {activeCollapsible === "kelompok" ? (
-            <ChevronUp className="ml-auto flex h-4 w-4 shrink-0 items-center justify-center rounded-full" />
-          ) : (
-            <ChevronDown className="ml-auto flex h-4 w-4 shrink-0 items-center justify-center rounded-full" />
-          )}
-        </button>
-        {activeCollapsible === "kelompok" && (
-          <div className="pl-8">
-            <Link href="/admin/layanan/kelompok" className="flex items-center rounded-lg p-2 text-muted-foreground transition-all hover:bg-accent w-full" onClick={closeSheet}>
-              List Data Kelompok
-            </Link>
-            <Link href="/admin/layanan/kelompok/create" className="flex items-center rounded-lg p-2 text-muted-foreground transition-all hover:bg-accent w-full" onClick={closeSheet}>
-              Tambah Kelompok
-            </Link>
-          </div>
-        )}
-      </div>
-      {/* ---------- Layanan ------------ */}
+    
       {/* ---------- Core ------------ */}
       <p className="flex items-center gap-3 rounded-lg px-3 pt-2 text-muted-foreground transition-all hover:text-primary">Core</p>
       <Link
@@ -149,13 +84,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ closeSheet }) => {
         <Table2 className="h-4 w-4" />
         Data Kelas
       </Link>
-      <Link
-        href="/admin/tahunAjaran"
-        className={`flex items-center gap-3 rounded-lg px-3 my-1 py-2 transition-all hover:bg-accent ${isActive("/admin/tahunAjaran") ? "bg-muted text-primary" : "text-muted-foreground"}`}
-        onClick={closeSheet}>
-        <Table2 className="h-4 w-4" />
-        Data Tahun Ajaran
-      </Link>
+      
       {/* ---------- Core ------------ */}
     </nav>
   );

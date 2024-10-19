@@ -1,7 +1,6 @@
 /** @format */
 "use client";
 import { Card, CardContent } from "@/components/ui/card";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import Breadcrumbs from "@/components/admin/breadcumbs";
 import { Label } from "@/components/ui/label";
@@ -13,7 +12,7 @@ const CreateKelas = () => {
       <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="flex-col">
           <h1 className="text-lg font-semibold md:text-2xl">Form Add Data Kelas</h1>
-          <p className="hidden md:block text-sm text-foreground font-extralight">Form untuk menambahkan data kelas MTsN 3 Jombang.</p>
+          <p className="hidden md:block text-sm text-foreground font-extralight">Form untuk menambahkan data kelas F1 Academy.</p>
         </div>
         <Breadcrumbs />
       </div>

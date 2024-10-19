@@ -12,7 +12,7 @@ const AdminHome = () => {
         <CardContent className="font-poppins flex flex-1 items-center justify-center">
           <div className="col">
             <h5 className="text-primary">Selamat Datang</h5>
-            <h3 className="text-foreground mb-2">Syafiq</h3>
+            <h3 className="text-foreground mb-2">Max Varstappen</h3>
             <p className="">
               <i>
                 Sukses bukanlah kunci dari kebahagiaan. Sebaliknya, kebahagiaan adalah kunci kesuksesan. Jika kamu mencintai apa yang kamu lakukan, kamu akan sukses.

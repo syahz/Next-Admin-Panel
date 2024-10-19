@@ -14,8 +14,8 @@ const Guru = () => {
     <main className="lg:gap-6 lg:p-6">
       <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="flex-col">
-          <h1 className="text-lg font-semibold md:text-2xl">Data Guru BK</h1>
-          <p className="hidden md:block text-sm text-foreground font-extralight">Table List of data guru BK</p>
+          <h1 className="text-lg font-semibold md:text-2xl">Data Guru</h1>
+          <p className="hidden md:block text-sm text-foreground font-extralight">Table List of data guru F1 Academy.</p>
         </div>
         <Breadcrumbs />
       </div>

@@ -15,8 +15,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MYBK - BK MTsN 3 Jombang",
-  description: "Apps BK MTsN 3 Jombang",
+  title: "F1A - F1 Academy",
+  description: "Apps F1 Academy",
   icons: {
     icon: [
       {

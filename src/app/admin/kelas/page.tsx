@@ -14,8 +14,8 @@ const Kelas = () => {
     <main className="lg:gap-6 lg:p-6">
       <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="flex-col">
-          <h1 className="text-lg font-semibold md:text-2xl">Data Kelas BK</h1>
-          <p className="hidden md:block text-sm text-foreground font-extralight">Table List of data Kelas MTsN 3 Jombang</p>
+          <h1 className="text-lg font-semibold md:text-2xl">Data Kelas</h1>
+          <p className="hidden md:block text-sm text-foreground font-extralight">Table List of data Kelas F1 Academy</p>
         </div>
         <Breadcrumbs />
       </div>
